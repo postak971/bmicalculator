@@ -5,7 +5,7 @@ const resultDiv = document.querySelector('#result');
 button.addEventListener('click', function () {
 const w = parseFloat(wInput.value);
 const h = parseFloat(hInput.value);
-const b = (w / (h * h) * 703).toFixed(1); ////Rounding the number to one decimal only.
+const b = (w / (h * h) * 703).toFixed(1); //Rounding the number to one decimal only.
 resultDiv.textContent = b;
     if (b < 18.5) {
         document.querySelector("#status").textContent = "Underweight";
